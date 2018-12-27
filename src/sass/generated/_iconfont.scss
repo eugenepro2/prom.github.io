@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('eot'),
+    url('../fonts/iconfont.woff2') format('woff2'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-calc: "\EA01";
+$icon-facebook: "\EA02";
+$icon-linkedin: "\EA03";
+$icon-mark: "\EA04";
+$icon-phone: "\EA05";
+$icon-twitter: "\EA06";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-calc:before { content: $icon-calc; }
+.icon-facebook:before { content: $icon-facebook; }
+.icon-linkedin:before { content: $icon-linkedin; }
+.icon-mark:before { content: $icon-mark; }
+.icon-phone:before { content: $icon-phone; }
+.icon-twitter:before { content: $icon-twitter; }
