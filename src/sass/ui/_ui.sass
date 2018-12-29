@@ -5,6 +5,15 @@
 body
   font-family: $pt
 
+.heading
+  h2
+    font-family: $noto
+    font-style: normal
+    font-weight: bold
+    line-height: normal
+    font-size: 33px
+    color: #000000
+    
 .btn
   text-decoration: none
   font-size: 14px
@@ -14,6 +23,28 @@ body
   transition: all 0.3s
   &--header
     background: #F6F6F6
+    &:hover
+      background: black
+      color: white
+  &--works
+    background: white
+    color: black
+    padding: 10px 80px
+    font-size: 18px
+    position: absolute
+    bottom: 50px
+    left: 50%
+    transform: translateX(-50%)
+    opacity: 0
+  &--news
+    background: #F6F6F6
+    display: inline-block
+    margin-top: 70px
+    font-size: 18px
+    padding: 20px 100px
+    left: 50%
+    position: relative
+    transform: translateX(-50%)
     &:hover
       background: black
       color: white

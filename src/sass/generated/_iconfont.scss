@@ -14,7 +14,13 @@ $icon-facebook: "\EA02";
 $icon-linkedin: "\EA03";
 $icon-mark: "\EA04";
 $icon-phone: "\EA05";
-$icon-twitter: "\EA06";
+$icon-services-1: "\EA06";
+$icon-services-2: "\EA07";
+$icon-services-3: "\EA08";
+$icon-services-4: "\EA09";
+$icon-services-5: "\EA0A";
+$icon-services-6: "\EA0B";
+$icon-twitter: "\EA0C";
 
 
 %icon {
@@ -38,4 +44,10 @@ $icon-twitter: "\EA06";
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-mark:before { content: $icon-mark; }
 .icon-phone:before { content: $icon-phone; }
+.icon-services-1:before { content: $icon-services-1; }
+.icon-services-2:before { content: $icon-services-2; }
+.icon-services-3:before { content: $icon-services-3; }
+.icon-services-4:before { content: $icon-services-4; }
+.icon-services-5:before { content: $icon-services-5; }
+.icon-services-6:before { content: $icon-services-6; }
 .icon-twitter:before { content: $icon-twitter; }
