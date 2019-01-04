@@ -7,3 +7,62 @@ mixin icon(name, modClass)
     - var modClass = ' ' + modClass
   svg(class=name + modClass)
     use(xlink:href= svgSprite + '#' + name)
+
+mixin breadcrumb(title, items)
+  section.breadcrumb
+    .container
+      .row
+        .col-xs-12
+          .breadcrumb__heading
+            h1= title
+            hr
+          .breadcrumb__links
+            each item in items
+              a(href="#")= item
+
+mixin services(title)
+  .col-md-4
+    article
+      img(src="img/services.jpg", alt="")
+      h1= title
+      a.btn.btn--services(href="#") Подробнее
+mixin project
+  a(href="#").projects__block
+    article
+      img(src="img/project.jpg", alt="")
+      h1 Дизайн интерьера ресторана и кафе
+      p Дизайн интерьера бара, ресторана или кафе должен быть уникальным и индивидуальным, неповторимым и стильным, удобным и комфортным. 
+mixin document
+  .documents__block
+    img(src="img/document.svg", alt="")
+    h3 Lorem ipsum dolor sit amet.doc
+    a.btn.btn--documents Скачать
+
+mixin form
+  section.form
+    .container
+      .row
+        .col-md-5
+          form
+            input(type="text" placeholder="Ваше имя")
+            input(type="tel" placeholder="Ваш телефон")
+            input(type="text" placeholder="Ваши вопросы")
+            button(type="submit").btn.btn--submit Подробнее
+        .col-md-7
+          .form__block
+            h2 Остались вопросы? <br> Напишите нам!
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at luctus ligula. In id facilisis lorem, vel commodo justo. Proin aliquet scelerisque ante sed condimentum. Nulla bibendum vehicula augue at pulvinar. Integer metus ipsum, facilisis vel auctor quis, tristique a eros.
+            .row.middle-xs
+              .form__block__social
+                a(href="#")
+                  i.icon.icon-twitter
+                a(href="#")
+                  i.icon.icon-linkedin
+                a(href="#")
+                  i.icon.icon-facebook
+              .form__block__phone
+                a(href="tel:+7 (343) 222-05-03") +7 (343) 222-05-03
+              .form__block__address
+                i.icon.icon-mark
+                span г. Екатеринбург, ул. Крестинского, 46а офис 507, 508, 509
+    

@@ -1,0 +1,51 @@
+.form
+  background: #F6F6F6
+  padding: 160px 0 115px
+  form
+    background: #222222
+    border-radius: 18px
+    padding: 60px 50px
+    display: flex
+    flex-direction: column
+    input
+      background: transparent
+      padding: 20px 0
+      color: white
+      border-bottom: 2px solid #5F5F5F
+      margin-bottom: 20px
+      &::placeholder
+        color: white
+  &__block
+    margin-left: 60px
+    h2
+      margin-bottom: 42px
+      font-size: 33px
+    p
+      margin-bottom: 35px
+    .row
+      justify-content: space-between
+    &__social
+      display: flex
+      a
+        background: white
+        width: 26px
+        height: 26px
+        font-size: 12px
+        text-decoration: none
+        color: black
+        border-radius: 50%
+        margin-right: 12px
+        +center
+    &__phone
+      a
+        font-size: 14px
+        text-decoration: none
+        color: black
+    &__address
+      display: flex
+      align-items: center
+      i
+        font-size: 16px
+        margin-right: 13px
+      span 
+        font-size: 14px

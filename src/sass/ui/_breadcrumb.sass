@@ -1,0 +1,43 @@
+.breadcrumb
+  background: #F6F6F6
+  padding-top: 100px
+  padding-bottom: 70px
+  &__heading
+    position: relative
+    display: flex
+    justify-content: center
+    margin-bottom: 30px
+    h1
+      font-family: $noto
+      font-size: 43px
+      text-align: center
+      background: #F6F6F6
+      z-index: 10
+      position: relative
+      text-transform: uppercase
+      padding: 0 70px
+    hr
+      position: absolute
+      top: 44%
+      transform: translateY(-50%)
+      width: 100%
+      border: 1px solid #C1C1C1
+  &__links
+    display: flex
+    justify-content: center
+    a
+      text-decoration: none
+      color: #929292
+      font-size: 14px
+      line-height: 15px
+      position: relative
+      &:not(:last-child)
+        margin-right: 30px
+        &:before
+          content: $icon-arrow
+          font-size: 6px
+          font-family: "iconfont"
+          position: absolute
+          right: -15px
+          top: 50%
+          transform: translateY(-50%)

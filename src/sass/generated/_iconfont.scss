@@ -9,18 +9,20 @@
   font-style: normal;
 }
 
-$icon-calc: "\EA01";
-$icon-facebook: "\EA02";
-$icon-linkedin: "\EA03";
-$icon-mark: "\EA04";
-$icon-phone: "\EA05";
-$icon-services-1: "\EA06";
-$icon-services-2: "\EA07";
-$icon-services-3: "\EA08";
-$icon-services-4: "\EA09";
-$icon-services-5: "\EA0A";
-$icon-services-6: "\EA0B";
-$icon-twitter: "\EA0C";
+$icon-arrow: "\EA01";
+$icon-calc: "\EA02";
+$icon-document: "\EA03";
+$icon-facebook: "\EA04";
+$icon-linkedin: "\EA05";
+$icon-mark: "\EA06";
+$icon-phone: "\EA07";
+$icon-services-1: "\EA08";
+$icon-services-2: "\EA09";
+$icon-services-3: "\EA0A";
+$icon-services-4: "\EA0B";
+$icon-services-5: "\EA0C";
+$icon-services-6: "\EA0D";
+$icon-twitter: "\EA0E";
 
 
 %icon {
@@ -39,7 +41,9 @@ $icon-twitter: "\EA0C";
   display: inline-block;
 }
 
+.icon-arrow:before { content: $icon-arrow; }
 .icon-calc:before { content: $icon-calc; }
+.icon-document:before { content: $icon-document; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-mark:before { content: $icon-mark; }

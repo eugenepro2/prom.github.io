@@ -5,6 +5,15 @@
 body
   font-family: $pt
 
+h1,h2,h3,h4,h5,h6
+  font-family: $noto
+
+.seo
+  h2
+    margin-bottom: 45px
+  p
+    margin-bottom: 20px
+
 .heading
   h2
     font-family: $noto
@@ -13,6 +22,10 @@ body
     line-height: normal
     font-size: 33px
     color: #000000
+p
+  font-size: 16px
+  color: #595959
+  line-height: 25px
     
 .btn
   text-decoration: none
@@ -48,3 +61,23 @@ body
     &:hover
       background: black
       color: white
+  &--services
+    background: white
+    padding: 20px 100px
+    position: absolute
+    bottom: -100px
+    left: 50%
+    transform: translateX(-50%)
+  &--submit
+    color: black
+    padding: 20px 100px
+    margin-top: 35px
+    border: 1px solid white
+    &:hover
+      background: transparent
+      color: white
+  &--documents
+    background: #F6F6F6
+    border-radius: 200px
+    padding: 20px 50px
+    font-size: 18px
