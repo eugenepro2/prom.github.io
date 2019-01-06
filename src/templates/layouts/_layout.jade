@@ -6,7 +6,21 @@ html
 
   body(class=bodyClass)
     //BEGIN out
-    .out(class=outClass)
+    #menu.slideout-menu
+      ul
+        li.current-item
+          a(href="services.html") Услуги
+        li
+          a(href="#") Тарифы
+        li
+          a(href="#") Интеграции
+        li
+          a(href="#") География
+        li
+          a(href="#") Контакты
+
+
+    .out#panel(class=outClass)
       block header
         include ../partials/_header
       block content
@@ -17,4 +31,5 @@ html
 
     //LOAD SCRIPTS
     block scripts
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js")
       script(type="text/javascript" src="js/app.js")

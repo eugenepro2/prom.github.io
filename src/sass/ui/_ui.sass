@@ -1,6 +1,24 @@
+
+.container
+  max-width: 1300px !important
+  width: 100% !important
+  padding: 0 30px
+  box-sizing: border-box
 .container,
 .row
   height: 100%
+
+
++r(767)
+	.hidden-xs
+		display: none !important
+@media only screen and (min-width: 768px) and (max-width: 1279px)
+	.hidden-sm
+		display: none !important
++rmin(1280)
+	.hidden-md
+		display: none !important
+
 
 body
   font-family: $pt
@@ -9,6 +27,7 @@ h1,h2,h3,h4,h5,h6
   font-family: $noto
 
 .seo
+  padding-top: 15px
   h2
     margin-bottom: 45px
   p
@@ -36,6 +55,8 @@ p
   transition: all 0.3s
   &--header
     background: #F6F6F6
+    +r(767)
+      margin-top: 20px
     &:hover
       background: black
       color: white
@@ -45,10 +66,10 @@ p
     padding: 10px 80px
     font-size: 18px
     position: absolute
-    bottom: 50px
+    bottom: -50px
     left: 50%
     transform: translateX(-50%)
-    opacity: 0
+    z-index: 10
   &--news
     background: #F6F6F6
     display: inline-block
@@ -58,9 +79,12 @@ p
     left: 50%
     position: relative
     transform: translateX(-50%)
+    white-space: nowrap
     &:hover
-      background: black
-      color: white
+      background: #e2e2e2
+    +r($mobile)
+      margin-top: 20px
+      padding: 20px 60px
   &--services
     background: white
     padding: 20px 100px
@@ -73,6 +97,8 @@ p
     padding: 20px 100px
     margin-top: 35px
     border: 1px solid white
+    +r($tablet)
+      padding: 10px 20px
     &:hover
       background: transparent
       color: white
@@ -81,3 +107,5 @@ p
     border-radius: 200px
     padding: 20px 50px
     font-size: 18px
+    +r($mobile)
+      padding: 10px 20px

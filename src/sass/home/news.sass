@@ -1,8 +1,15 @@
 .news
   padding: 90px 0
+  +r($mobile)
+    padding: 40px 0
   h2
     margin-bottom: 65px
+    +r($mobile)
+      margin-bottom: 40px
   article
+    cursor: pointer
+    +r($tablet)
+      margin-bottom: 40px
     span
       border: 1px solid #1B1F2A
       box-sizing: border-box
@@ -13,13 +20,22 @@
       padding: 10px 15px
       margin-bottom: 20px
       display: inline-block
+      transition: all 0.3s
     h1
       font-family: $noto
       font-size: 26px
       font-weight: normal
       margin-bottom: 10px
+      border-bottom: 1px solid white
+      display: inline-block
+      transition: all 0.3s
     p
       font-size: 16px
       line-height: 25px
       color: #595959
-    
+    &:hover
+      span
+        background: black
+        color: white
+      h1
+        border-bottom: 1px solid black

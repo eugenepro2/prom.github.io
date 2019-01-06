@@ -1,6 +1,10 @@
 .form
   background: #F6F6F6
   padding: 160px 0 115px
+  +r($tablet)
+    padding: 60px 0
+  +r($mobile)
+    padding: 40px 0
   form
     background: #222222
     border-radius: 18px
@@ -17,15 +21,24 @@
         color: white
   &__block
     margin-left: 60px
+    +r($mobile)
+      margin-left: 0
+      margin-top: 20px
     h2
       margin-bottom: 42px
       font-size: 33px
+      +r($mobile)
+        margin-bottom: 20px
     p
       margin-bottom: 35px
     .row
       justify-content: space-between
     &__social
       display: flex
+      +r($tablet)
+        justify-content: center
+        width: 50%
+        margin-bottom: 20px
       a
         background: white
         width: 26px
@@ -37,6 +50,10 @@
         margin-right: 12px
         +center
     &__phone
+      +r($tablet)
+        justify-content: center
+        width: 50%
+        margin-bottom: 20px
       a
         font-size: 14px
         text-decoration: none

@@ -1,6 +1,15 @@
 .header
   &__bottom
     height: 120px
+    +r($mobile)
+      height: 100%
+      padding-bottom: 30px
+  &__menu
+    i
+      font-size: 20px
+      color: white
+      position: relative
+      top: 3px
   &__toolbar
     background: $blue
     height: 45px
@@ -8,11 +17,17 @@
       ul
         display: flex
         justify-content: space-between
+        li.current-item
+          a
+            border-bottom: 1px solid #ffffff
         a
           color: white
           text-decoration: none
           font-size: 16px
-          font-weight: bold
+          font-weight: 500
+          &:hover
+            font-weight: 600
+
     &__city
       i
         font-size: 14px
@@ -22,6 +37,8 @@
         text-decoration: none
         color: white
         font-size: 14px
+        &:hover
+          font-weight: 600
     &__phone
       a
         color: white
@@ -34,6 +51,8 @@
     text-decoration: none
     display: flex
     align-items: center
+    +r($mobile)
+      padding: 20px 0
     span
       color: black
       font-family: $mont
@@ -41,6 +60,7 @@
       font-weight: 500
       text-transform: uppercase
       padding-left: 35px
+      margin-top: 10px
   &__info
     &__calc
       color: black
@@ -48,6 +68,8 @@
       text-decoration: none
       display: flex
       align-items: center
+      +r($mobile)
+        margin-bottom: 20px
       i
         background: black
         color: white
@@ -55,9 +77,13 @@
         font-size: 20px
     &__social
       display: flex
+      +r($mobile)
+        justify-content: center
+        margin-bottom: 20px
       a
         font-size: 16px
         color: $blue
+        height: 17px
         &:not(:last-child)
           margin-right: 25px
 

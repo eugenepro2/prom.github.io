@@ -1,6 +1,8 @@
 .about
   padding: 110px 0
   background: #F6F6F6
+  +r($tablet)
+    padding: 60px 0
   &__image
     width: 100%
     img
@@ -8,8 +10,17 @@
   h2
     margin-left: 60px
     margin-bottom: 45px
+    +r($tablet)
+      margin-left: 0
+      margin-top: 30px
+      margin-bottom: 20px
+    +r($mobile)
+      font-size: 28px
+
   p
     margin-left: 60px
     font-size: 16px
     line-height: 25px
     color: #595959
+    +r($tablet)
+      margin-left: 0

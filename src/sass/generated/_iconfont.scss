@@ -11,18 +11,22 @@
 
 $icon-arrow: "\EA01";
 $icon-calc: "\EA02";
-$icon-document: "\EA03";
-$icon-facebook: "\EA04";
-$icon-linkedin: "\EA05";
-$icon-mark: "\EA06";
-$icon-phone: "\EA07";
-$icon-services-1: "\EA08";
-$icon-services-2: "\EA09";
-$icon-services-3: "\EA0A";
-$icon-services-4: "\EA0B";
-$icon-services-5: "\EA0C";
-$icon-services-6: "\EA0D";
-$icon-twitter: "\EA0E";
+$icon-contact-1: "\EA03";
+$icon-contact-2: "\EA04";
+$icon-contact-3: "\EA05";
+$icon-document: "\EA06";
+$icon-facebook: "\EA07";
+$icon-linkedin: "\EA08";
+$icon-mark: "\EA09";
+$icon-menu: "\EA0A";
+$icon-phone: "\EA0B";
+$icon-services-1: "\EA0C";
+$icon-services-2: "\EA0D";
+$icon-services-3: "\EA0E";
+$icon-services-4: "\EA0F";
+$icon-services-5: "\EA10";
+$icon-services-6: "\EA11";
+$icon-twitter: "\EA12";
 
 
 %icon {
@@ -43,10 +47,14 @@ $icon-twitter: "\EA0E";
 
 .icon-arrow:before { content: $icon-arrow; }
 .icon-calc:before { content: $icon-calc; }
+.icon-contact-1:before { content: $icon-contact-1; }
+.icon-contact-2:before { content: $icon-contact-2; }
+.icon-contact-3:before { content: $icon-contact-3; }
 .icon-document:before { content: $icon-document; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-linkedin:before { content: $icon-linkedin; }
 .icon-mark:before { content: $icon-mark; }
+.icon-menu:before { content: $icon-menu; }
 .icon-phone:before { content: $icon-phone; }
 .icon-services-1:before { content: $icon-services-1; }
 .icon-services-2:before { content: $icon-services-2; }

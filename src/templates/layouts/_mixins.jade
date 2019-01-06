@@ -21,7 +21,7 @@ mixin breadcrumb(title, items)
               a(href="#")= item
 
 mixin services(title)
-  .col-md-4
+  .col-md-4.col-sm-6.col-xs-12
     article
       img(src="img/services.jpg", alt="")
       h1= title
@@ -33,7 +33,7 @@ mixin project
       h1 Дизайн интерьера ресторана и кафе
       p Дизайн интерьера бара, ресторана или кафе должен быть уникальным и индивидуальным, неповторимым и стильным, удобным и комфортным. 
 mixin document
-  .documents__block
+  .components-documents__block
     img(src="img/document.svg", alt="")
     h3 Lorem ipsum dolor sit amet.doc
     a.btn.btn--documents Скачать
@@ -42,13 +42,13 @@ mixin form
   section.form
     .container
       .row
-        .col-md-5
+        .col-md-5.col-sm-5.col-xs-12
           form
             input(type="text" placeholder="Ваше имя")
             input(type="tel" placeholder="Ваш телефон")
             input(type="text" placeholder="Ваши вопросы")
             button(type="submit").btn.btn--submit Подробнее
-        .col-md-7
+        .col-md-7.col-sm-7.col-xs-12
           .form__block
             h2 Остались вопросы? <br> Напишите нам!
             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at luctus ligula. In id facilisis lorem, vel commodo justo. Proin aliquet scelerisque ante sed condimentum. Nulla bibendum vehicula augue at pulvinar. Integer metus ipsum, facilisis vel auctor quis, tristique a eros.
