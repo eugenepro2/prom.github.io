@@ -11,7 +11,7 @@
     padding: 60px 50px
     display: flex
     flex-direction: column
-    input
+    input, textarea
       background: transparent
       padding: 20px 0
       color: white
@@ -57,3 +57,22 @@
         margin-right: 13px
       span 
         font-size: 14px
+.modal-form
+  padding: 0
+  form
+    background: white
+    input, textarea
+      color: #929292
+      border: none
+      border-bottom: 2px solid #5F5F5F
+      &::placeholder
+        color: #929292
+    .btn
+      background: black
+      color: white
+      border: 1px solid white
+      &:hover
+        background: white
+        color: black
+        border: 1px solid black
+      

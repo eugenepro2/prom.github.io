@@ -1,5 +1,9 @@
 import 'slick-carousel/slick/slick';
 import $ from 'jquery';
+import autosize from 'autosize';
+import Modal from 'jquery-modal'
+
+autosize(document.querySelectorAll('textarea'));
 
 $('.slick').slick({
   arrows: false,

@@ -7,6 +7,15 @@ html
   body(class=bodyClass)
     //BEGIN out
     #menu.slideout-menu
+      .center
+        .header__toolbar__phone
+            a(href="tel:+7 (343) 222-05-03") 
+              i.icon.icon-phone
+              | +7 (343) 222-05-03
+        a(href="#").header__info__calc
+          i.icon.icon-calc
+          span Калькулятор
+        a(href="#").btn.btn--header Заказать звонок
       ul
         li.current-item
           a(href="services.html") Услуги
@@ -18,15 +27,6 @@ html
           a(href="#") География
         li
           a(href="#") Контакты
-      .center
-        .header__toolbar__phone
-            a(href="tel:+7 (343) 222-05-03") 
-              i.icon.icon-phone
-              | +7 (343) 222-05-03
-        a(href="#").header__info__calc
-          i.icon.icon-calc
-          span Калькулятор
-        a(href="#").btn.btn--header Заказать звонок
 
 
     .out#panel(class=outClass)

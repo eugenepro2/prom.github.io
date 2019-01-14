@@ -13,6 +13,9 @@
   <body>
     <!--BEGIN out-->
     <div id="menu" class="slideout-menu">
+      <div class="center">
+        <div class="header__toolbar__phone"><a href="tel:+7 (343) 222-05-03"> <i class="icon icon-phone"></i>+7 (343) 222-05-03</a></div><a href="#" class="header__info__calc"><i class="icon icon-calc"></i><span>Калькулятор</span></a><a href="#" class="btn btn--header">Заказать звонок</a>
+      </div>
       <ul>
         <li class="current-item"><a href="services.html">Услуги</a></li>
         <li><a href="#">Тарифы</a></li>
@@ -20,9 +23,6 @@
         <li><a href="#">География</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <div class="center">
-        <div class="header__toolbar__phone"><a href="tel:+7 (343) 222-05-03"> <i class="icon icon-phone"></i>+7 (343) 222-05-03</a></div><a href="#" class="header__info__calc"><i class="icon icon-calc"></i><span>Калькулятор</span></a><a href="#" class="btn btn--header">Заказать звонок</a>
-      </div>
     </div>
     <div id="panel" class="out">
       <!--BEGIN header-->
@@ -50,7 +50,7 @@
                     <div class="header__toolbar__city"><i class="icon icon-mark"></i><a href="#">г. Екатеринбург</a></div>
                   </div>
                   <div class="col-xs-6 hidden-xs">
-                    <div class="header__toolbar__phone"><a href="tel:+7 (343) 222-05-03"> <i class="icon icon-phone"></i>+7 (343) 222-05-03</a></div>
+                    <div class="header__toolbar__phone"><a href="tel:+7 (343) 222-05-03"> <i class="icon icon-phone"></i><span>+7 (343) 222-05-03</span></a></div>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@
                     <div class="col-sm-4 col-xs-6">
                       <div class="header__info__social"><a href="#"><i class="icon icon-twitter"></i></a><a href="#"><i class="icon icon-linkedin"></i></a><a href="#"><i class="icon icon-facebook"></i></a></div>
                     </div>
-                    <div class="col-sm-4 col-xs-12 center-xs start-sm"><a href="#" class="btn btn--header">Заказать звонок</a></div>
+                    <div class="col-sm-4 col-xs-12 center-xs start-sm"><a href="#form" rel="modal:open" class="btn btn--header">Заказать звонок</a></div>
                   </div>
                 </div>
               </div>
@@ -195,6 +195,13 @@
           </div>
         </div>
       </footer>
+      <div id="form" class="modal">
+        <div class="form modal-form">
+          <form>
+            <h2>Калькулятор</h2><input type="text" placeholder="Ваше имя"><input type="tel" placeholder="Ваш телефон"><input type="text" placeholder="Ваши вопросы"><textarea rows="1"></textarea><button type="submit" class="btn btn--submit">Подробнее</button>
+          </form>
+        </div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
