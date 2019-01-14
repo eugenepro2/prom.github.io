@@ -1,0 +1,147 @@
+.overlay-toggle {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  position: relative;
+  z-index: 15;
+  width: auto;
+  min-width: 30px;
+  height: 40px;
+}
+
+.overlay-toggle span,.overlay-toggle span:after,.overlay-toggle span:before {
+  display: block;
+  height: 3px;
+  transition-duration: .25s;
+  transition-property: background-color,transform
+}
+
+.overlay-toggle span {
+  background: #FFF;
+  width: 30px;
+}
+
+.overlay-toggle span:after,.overlay-toggle span:before {
+  background-color: #FFF;
+  content: "";
+  position: absolute;
+  width: inherit
+}
+
+.overlay-toggle span:before {
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px)
+}
+
+.overlay-toggle span:after {
+  -ms-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+.overlay-toggle.is-active span {
+  animation: burgerCloseA .3s;
+  animation-fill-mode: forwards
+}
+
+.overlay-toggle.is-active span:after,.overlay-toggle.is-active span:before {
+  animation: burgerCloseB .3s;
+  animation-fill-mode: forwards
+}
+
+.overlay-toggle.is-closing span {
+  animation: burgerOpenA .3s;
+  animation-fill-mode: forwards
+}
+
+.overlay-toggle.is-closing span:after,.overlay-toggle.is-closing span:before {
+  animation: burgerOpenB .3s;
+  animation-fill-mode: forwards
+}
+
+@keyframes burgerCloseA {
+  50% {
+      transform: translateY(0)
+  }
+
+  100% {
+      transform: translateY(0) rotate(-45deg)
+  }
+}
+
+@keyframes burgerCloseB {
+  50% {
+      transform: translateY(0)
+  }
+
+  100% {
+      transform: translateY(0) rotate(90deg)
+  }
+}
+
+@keyframes burgerOpenA {
+  0% {
+      transform: translateY(0) rotate(-45deg)
+  }
+
+  50% {
+      transform: translateY(0)
+  }
+}
+
+@keyframes burgerOpenB {
+  0% {
+      transform: translateY(0) rotate(90deg)
+  }
+
+  50% {
+      transform: translateY(0)
+  }
+}
+
+.overlay-layout {
+  display: none;
+  flex-direction: column;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 300ms;
+  visibility: hidden;
+  width: 100%;
+  min-height: 100%;
+  z-index: 999;
+  background-color: #000;
+  padding-top: 200px;
+  body.modal-open & {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.overlay-container {
+  width: 100%;
+}
+
+body.modal-open {
+  main {
+    display: none;
+  }
+}
+
+@media (--sm-viewport) {
+
+}
+
+@media (--md-viewport) {
+  .overlay-layout {
+    padding-top: 170px;
+  }
+}
+
+@media (--lg-viewport) {
+
+}

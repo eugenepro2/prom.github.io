@@ -3,9 +3,9 @@ header.header
   .header__toolbar
     .container
       .row.middle-xs
-        .col-xs-2.hidden-sm.hidden-md
-          .header__menu
-            i.icon.icon-menu
+        .col-xs-1.hidden-sm.hidden-md
+          .header__menu(data-toggle-mobile-menu)
+            span
         .col-md-6.col-sm-6.hidden-xs
           nav
             ul
@@ -19,13 +19,13 @@ header.header
                 a(href="#") География
               li
                 a(href="#") Контакты
-        .col-md-4.col-md-offset-2.col-sm-6.col-xs-10.end-xs
+        .col-md-4.col-md-offset-2.col-sm-6.col-xs-11.end-xs
           .row.middle-xs.end-xs
             .col-xs-6.col-sm-offset-1.col-sm-5
               .header__toolbar__city
                 i.icon.icon-mark
                 a(href="#") г. Екатеринбург
-            .col-xs-6
+            .col-xs-6.hidden-xs
               .header__toolbar__phone
                 a(href="tel:+7 (343) 222-05-03") 
                   i.icon.icon-phone
@@ -37,7 +37,7 @@ header.header
           a(href="/").header__logo
             img(src="img/logo.svg", alt="")
             span Промгражданпроект
-        .col-md-5.col-md-offset-4.col-sm-7.col-sm-offset-1.col-xs-12
+        .col-md-5.col-md-offset-4.col-sm-7.col-sm-offset-1.col-xs-12.hidden-xs
           .header__info
             .row.middle-xs
               .col-sm-4.col-xs-6

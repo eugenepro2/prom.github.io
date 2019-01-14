@@ -32,32 +32,23 @@
     p
       margin-bottom: 35px
     .row
-      justify-content: space-between
-    &__social
-      display: flex
-      +r($tablet)
-        justify-content: center
-        width: 50%
-        margin-bottom: 20px
-      a
-        background: white
-        width: 26px
-        height: 26px
-        font-size: 12px
-        text-decoration: none
-        color: black
-        border-radius: 50%
-        margin-right: 12px
-        +center
     &__phone
+      margin-right: 20px
+      display: flex
+      align-items: center
       +r($tablet)
         justify-content: center
         width: 50%
         margin-bottom: 20px
+      i
+        font-size: 16px
+        margin-right: 13px
       a
         font-size: 14px
         text-decoration: none
         color: black
+        &:hover
+          text-decoration: underline
     &__address
       display: flex
       align-items: center
